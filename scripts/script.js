@@ -75,13 +75,27 @@ function changeMessage(b) {
         $("#message").animate({
             "padding-top" : "0em",
             "font-size":"7vw"
-        }, 500, reverse);
+        }, 500, function(){
+            reverse(b);
+        });
     }
-    function reverse(){
+    function reverse(b){
         $("#message").animate({
             "padding-top" : "0.5em",
             "font-size":"5vw"
         }, 500);
+        if(!b){
+            function hidePopup(){
+                $("#popupAnswer").css({
+                    "display":"none"
+                });
+            }
+            $("#popupAnswer").css({
+                "display":"block"
+            });
+            $("#popupCorrectAnswer").html(correctAnswer);
+            setTimeout(hidePopup, 1500);
+        }
     }
     $("#message").css({
         "display": "block"

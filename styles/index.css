@@ -36,6 +36,26 @@ body{
     padding-top: 0.5em;
 }
 
+#popupAnswer{
+    display: none;
+    position: absolute;
+    top: 0vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+#popupCorrectAnswer{
+    margin-top: 20vw;
+    padding-left: 20vw;
+    font-family: 'Anonymous Pro', monospace;
+    color: darkred;
+    font-size: 3vw;
+    background-color: rgba(250, 10, 10, 0.808);
+}
+
 #popup{
     display: none;
     position: absolute;
