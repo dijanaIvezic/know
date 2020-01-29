@@ -1,0 +1,109 @@
+body{
+    margin: 0px;
+    background-image: url("../images/128-99.jpg");
+    background-repeat: repeat;
+}  
+
+#header{
+    position: sticky;
+    top: 0;
+    height: 10vw;
+    width: 100%;
+    background-color: black;
+    font-size: 9.5vw;
+    font-family: 'Great Vibes', cursive;
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+#title{
+    margin-top: 0em;
+    float: left;
+}
+
+#counter{
+    margin-top: 0em;
+    float: right;
+    padding-right: 1em;
+}
+
+#message{
+    font-size: 5vw;
+    margin-top: 0em;
+    float: right;
+    display: none;
+    padding-right: 1em;
+    padding-top: 0.5em;
+}
+
+#popup{
+    display: none;
+    position: absolute;
+    top: 0vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#popupQuestion{
+    margin-top: 20vw;
+    padding-left: 20vw;
+    font-family: 'Anonymous Pro', monospace;
+    color: whitesmoke;
+    font-size: 3vw;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#popupButtonDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.popupButton{
+    z-index: inherit;
+    width: 20vw;
+    height: 10vw;
+    border: none;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 2vw;
+    color: black;
+    margin: 1vw;
+    transition: color 0.4s ease, background-color 0.4s ease;;
+}
+
+#popupButton1{
+    background-color: yellow;
+}
+#popupButton2{
+    background-color: red;
+}
+#popupButton3{
+    background-color: green;
+}
+#popupButton4{
+    background-color: blue;
+}
+
+#divni{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.butto{
+    height: 20vw;
+    width: 20vw;
+    background-color: darkgrey;
+    border: none;
+    color: black;
+    font-family: 'Anonymous Pro', monospace;
+    transition: color 0.4s ease;
+    margin: 1vw;
+    font-size: 2vw;
+    padding: 1vw;
+}
